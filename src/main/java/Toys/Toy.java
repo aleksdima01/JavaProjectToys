@@ -39,7 +39,6 @@ public class Toy {
     public String toString() {
         return "name='" + name + '\'' +
                 ", id=" + id +
-                ", freq=" + freq +
-                '}';
+                ", freq=" + freq;
     }
 }

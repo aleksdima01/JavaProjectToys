@@ -19,7 +19,7 @@ public class Main {
 //        System.out.println(array2);
 //        System.out.println(array3);
         PriorityQ queue=new PriorityQ();
-        queue.add(toy1);
+         queue.add(toy1);
         queue.add(toy2);
         queue.add(toy3);
         queue.get();
