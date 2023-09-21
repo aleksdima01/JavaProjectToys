@@ -1,6 +1,5 @@
 package Toys;
 
-<<<<<<< HEAD
 
 public class Main {
     public static void main(String[] args) {
@@ -23,5 +22,4 @@ public class Main {
         queue.get();
     }
 }
-=======
->>>>>>> 56e5424 (Initial commit)
+
