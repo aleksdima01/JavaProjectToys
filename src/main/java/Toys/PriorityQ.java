@@ -1,7 +1,5 @@
 package Toys;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -30,6 +28,13 @@ public class PriorityQ {
         } else
             save.save(toy.toString());
         System.out.println("Игрушка с id=" + toy.getId());
+    }
+
+    @Override
+    public String toString() {
+        return "PriorityQ{" +
+                "queue=" + queue +
+                '}';
     }
 }
 

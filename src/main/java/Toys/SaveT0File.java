@@ -1,24 +1,31 @@
 package Toys;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class SaveT0File {
-    FileWriter writer;
+
 
     public void save(String str) {
         {
+            FileWriter writer;
+            BufferedWriter bufferedWriter = null;
             try {
                 writer = new FileWriter("src/main/java/Toys/Toy.txt");
-                BufferedWriter bufferedWriter = new BufferedWriter(writer);
-                bufferedWriter.write(String.format("%s\n",str));
-                bufferedWriter.close();
-
+                bufferedWriter = new BufferedWriter(writer);
+                bufferedWriter.write(String.format("%s\n", str));
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
+            } finally {
+                try {
+                    bufferedWriter.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
+
+
     }
 }

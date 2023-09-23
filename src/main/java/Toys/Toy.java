@@ -1,11 +1,11 @@
 package Toys;
 
 public class Toy {
-    String name;
-    int id;
-    int freq;
+    private String name;
+    private int id;
+    private int freq;
 
-    public Toy(int id,String name,  int freq) {
+    public Toy(int id, String name, int freq) {
         this.name = name;
         this.id = id;
         this.freq = freq;
@@ -31,7 +31,7 @@ public class Toy {
         return freq;
     }
 
-    private void setFreq(int freq) {
+    public void setFreq(int freq) {
         this.freq = freq;
     }
 
